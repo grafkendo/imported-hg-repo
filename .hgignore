@@ -1,0 +1,165 @@
+syntax: glob
+.svn
+.cvs
+.git
+.listing
+*.bak
+*.swp
+plugins/wp-file-cache/cache
+_wpeprivate
+.cache
+temp
+tmp
+*.tmp
+imagecache*
+uploads*
+*_backup
+gt-cache
+ics-importer-cache
+wp-config.php
+wp-content/w3tc-config/*
+wp-content/cache/*
+wp-content/plugins/wpengine-snapshot/snapshots/*
+wp-content/uploads/snapshots
+wp-content/themes/thesis*/custom/cache
+wp-content/themes/thesis*/lib/scripts/cache
+wp-content/themes/*/cache/*
+wp-content/w3tc-bak
+wp-content/backup*
+wp-content/temp*
+wp-content/debug.log
+wp-content/backups
+wp-content/managewp
+wp-content/upgrade/*
+wp-content/uploads
+wp-content/blogs.dir/*/*
+pclzip-*
+*.log
+*.old
+
+# WordPress debugging files
+log.txt
+debug.log
+
+# Gallaries in various places
+gallery/*
+wp-content/gallery/*
+wp-content/album/*
+
+# Found in 'sneakernews' - probably just a backup but never going to be good to include
+wp-content/plugins/plugins
+
+# Found in the root of pod-1009
+.a
+
+# Forum software we probably shouldn't support anyway
+forum/*
+
+# known large file types
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.zip
+*.tar
+*.tgz
+*.gz
+
+#wscs files#
+stock-research/company/twitter_cache/*
+Files-NoValid-Now
+wp-content/blacklistplugins
+stock-research/company/caches/*
+stock-research/company/fundament/*
+Just-For-Test/*
+google-news-sitemap.xml
+marketwatch-sitemap.xml
+thestreet-sitemap.xml
+yahoo-news-sitemap.xml
+stream-news-sitemap.xml
+ws-admin/stat/view-post-data.php
+ws-admin/*
+wp-content/themes/wallstcheatsheet-v2/feeds/caches/*
+pmca/*
+nginx.conf
+*.orig
+secure/feed/yahoocontent/caches/*
+secure/feed/current-articles/feed-cached
+secure/feed/current-articles/msn/feed-cached
+secure/feed/current/caches/*
+secure/feed/current/gateway/feed-cached
+secure/feed/category/excludes/*
+secure/feed/category/caches/*
+custom-feeds/googlenews/caches/*
+wp-content/object-cache.php
+wp-content/db.php
+
+#Yii
+members/assets/*
+!members/assets/.gitignore
+members/protected/runtime/*
+!members/protected/runtime/.gitignore
+members/protected/data/*.db
+members/protected/config/main.php
+
+#Dev Server
+advertise/*
+demo/*
+ux/*
+#widgets/*
+cheatsheet-design-pattern-lib/*
+
+#Sass Cache
+wp-content/themes/wallstcheatsheet-v2/css/.sass-cache/*
+wp-content/themes/wallstcheatsheet-v2/hub/css/.sass-cache/*
+wp-content/themes/wallstcheatsheet-v2/jobs/css/.sass-cache/*
+
+#Localhost plugin files
+wp-content/plugins/wordpress-importer/*
+#wp-content/plugins/coveloping-shortcode-menu/*
+wp-content/plugins/regenerate-thumbnails/*
+
+#htaccess
+.htaccess
+
+#Grunt files
+wp-content/themes/wallstcheatsheet-v2/node_modules/*
+
+#Json feed data
+json/data/*
+
+#csapi config
+csapi/config.php
+
+#hyperdb and w3tc
+db-config.php
+wp-content/db.php
+
