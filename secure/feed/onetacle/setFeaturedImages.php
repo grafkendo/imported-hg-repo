@@ -4,6 +4,9 @@
  * uses 'image' postmeta field injected by other posts transfer script to set new theme's featured image
  */
 
+set_time_limit(0);
+define('WP_USE_THEMES', false);
+
 require_once('../../../wp-load.php');
 require_once('../../../wp-admin/includes/image.php');
 
