@@ -7,6 +7,7 @@
 require_once('../../../wp-load.php');
 require_once('../../../wp-admin/includes/image.php');
 
+if(!isset($_GET["scode"]) || $_GET["scode"] != "dAr5jE3oK") exit;
 
 $args = array(
  'posts_per_page'=>'-1',//get all posts
