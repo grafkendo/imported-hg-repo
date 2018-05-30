@@ -9,6 +9,13 @@
 <?php $mts_options = get_option(MTS_THEME_NAME); ?>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K634BQV');</script>
+<!-- End Google Tag Manager -->
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<!--[if IE ]>
@@ -20,6 +27,10 @@
 	<?php wp_head(); ?>
 </head>
 <body id="blog" <?php body_class('main'); ?>>    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K634BQV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<div class="main-container">
 		<header id="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="container">
