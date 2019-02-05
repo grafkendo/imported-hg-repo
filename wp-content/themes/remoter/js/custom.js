@@ -45,5 +45,27 @@ jQuery(document).ready(function($){
     $('.btn-close-form').click(function(){
         $(this).parent('.form-holder').hide("fast");
     });
-       
+
+    // Sticky Header
+    var navBar = $('.site-header');
+    navBar.next().css('margin-top', $(navBar).height()+12+'px');
+    function stickyNav() {
+        var $window = $(window);
+        var $document = $(document);
+        var eloffset = navBar.offset().top;
+
+        return $window.scroll(function() {
+
+            var c = $document.scrollTop();
+
+            if (eloffset < c ){
+                navBar.addClass('stick-header');
+            } else {
+                navBar.removeClass('stick-header');
+            }
+
+        });
+    }
+
+    stickyNav();
 });
