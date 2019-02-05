@@ -1034,12 +1034,143 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 	}
 }
 
-/* Remoter Custom CSS*/
-.custom-logo {
-    max-width: 38%;
-    height: auto;
+.site-header {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 24px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;	 
+}
+
+.site-header .text-logo {
+	float: left;
+	text-align: left;
+}
+
+.site-header .text-logo, .site-header .text-logo img{
+	height: 80px;
 }
 
 .site-header .header-t {
-    padding: 32px 0 18px;
+	display: none;
 }
+
+@media only screen and (min-width: 1025px) {
+
+	.site-header .text-logo {
+		margin-right: 24px;
+	}
+
+	.header-sec .main-navigation {
+		margin-top: 20px;
+	}
+
+	.header-sec .main-navigation ul li {
+	    padding: 8px 16px;
+	}
+
+	.header-sec .main-navigation ul li a{
+	    padding: 0;
+	}
+
+	.main-navigation ul li:after, 
+	.header-sec .main-navigation ul li a:hover, 
+	.header-sec .main-navigation ul li a:focus, 
+	.header-sec .main-navigation ul li:hover > a, 
+	.header-sec .main-navigation ul li:focus > a, 
+	.header-sec .main-navigation ul .current-menu-item > a,
+	.header-sec .main-navigation ul .current-menu-ancestor > a, 
+	.header-sec .main-navigation ul .current_page_item > a, 
+	.header-sec .main-navigation ul .current_page_ancestor > a {
+		background: transparent !important;
+		color: #111;
+	    background-size: 100% 100%;
+	    text-decoration: none;
+	    background-image: linear-gradient(180deg, transparent 93%, #1e73be 0) !important;	
+	}
+
+	.navigation-holder {
+		padding: 16px 0 !important;
+	}
+}
+
+.banner-layout-two {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.navigation-holder {
+	    padding: 16px 0;
+	}
+	#toggle-button {
+		 margin-top: 10px;
+		 margin-right: 15px;
+	}
+
+	#toggle-button span {
+	    width: 30px;
+	}
+
+	#toggle-button span:before {
+	    top: -11px;
+	}
+
+	#toggle-button span:after {
+	    bottom: -11px;
+	}
+
+	.site-header .text-logo, .site-header .text-logo img {
+	    height: 50px;
+	}
+
+	.header-sec .navigation-holder .tools {
+	    margin-top: 14px;
+	}
+
+
+}
+
+.site-header .text-logo a {
+	transition: ease 0.2s;
+}
+
+.site-title {
+    font-size: 50px !important;
+    line-height: 1 !important;
+    margin-bottom: 16px !important;
+}
+
+.site-description {
+    font-size: 14px  !important;
+    line-height: 1em  !important;
+    margin-bottom: 0  !important;
+}
+
+.site-header.stick-header .text-logo, .site-header.stick-header .text-logo img {
+    height: 40px;
+    transition: ease 0.1s;
+}
+
+.site-header.stick-header .main-navigation {
+    margin-top: 0 !important;
+}
+
+.site-header.stick-header .navigation-holder .tools {
+    margin-top: 10px;
+}
+
+.site-header.stick-header #toggle-button {
+	margin-top: 4px;
+}
+
+.site-header.stick-header .site-title {
+    font-size: 36px !important;
+}
+
+.menu-open .site-header {
+	position: initial;
+} 
+
+

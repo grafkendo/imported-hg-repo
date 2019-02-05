@@ -395,28 +395,6 @@ function blossom_fashion_header(){
                         </div>
                         <div class="col">
                     <?php endif; ?>
-                            <div class="text-logo" itemscope itemtype="http://schema.org/Organization">
-                            <?php
-                                if( function_exists( 'has_custom_logo' ) && has_custom_logo() ){
-                                    the_custom_logo();
-                                }
-                                
-                                if( is_front_page() ){ ?>
-                                    <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-                                    <?php 
-                                }else{ ?>
-                                    <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
-                                <?php 
-                                } 
-                             
-                                $description = get_bloginfo( 'description', 'display' );
-                                if ( $description || is_customize_preview() ){ ?>
-                                    <p class="site-description"><?php echo esc_html( $description ); ?></p>
-                                <?php
-            
-                                }
-                            ?>
-                            </div>
                         <?php if( $header_layout == 'header-one' ) : ?>
                             </div>
                             <div class="col">
@@ -445,7 +423,31 @@ function blossom_fashion_header(){
             <div class="container">
                 <div class="overlay"></div>
                 <div id="toggle-button">
-                    <span></span><?php esc_html_e( 'Menu', 'remoter' ); ?>
+                    <span></span>
+                </div>
+                <div class="text-logo" itemscope itemtype="http://schema.org/Organization">
+                <?php
+                    if( function_exists( 'has_custom_logo' ) && has_custom_logo() ){
+                        the_custom_logo();
+                    } else {
+                        echo remoter_logo();
+                    }
+                    
+                    if( is_front_page() ){ ?>
+                        <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+                        <?php 
+                    }else{ ?>
+                        <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
+                    <?php 
+                    } 
+                 
+                    $description = get_bloginfo( 'description', 'display' );
+                    if ( $description || is_customize_preview() ){ ?>
+                        <p class="site-description"><?php echo esc_html( $description ); ?></p>
+                    <?php
+
+                    }
+                ?>
                 </div>
                 <nav id="site-navigation" class="main-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                     <?php
