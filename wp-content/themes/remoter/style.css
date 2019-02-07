@@ -583,7 +583,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 .header-sec .navigation-holder .tools{
 	display: block;
 	float: right;
-	margin-top: 28px;
+	margin-top: 14px;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
@@ -1013,6 +1013,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 	object-fit: cover;
 }
 
+#primary .post .post-thumbnail img {
+   width: 100%;
+   height: auto;
+}
+
 @media only screen and (max-width: 1024px){
 	.header-sec .navigation-holder .tools{
 		margin-top: 0;
@@ -1034,6 +1039,16 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 	}
 }
 
+.logged-in .site-header{
+	top: 36px !important;
+}
+
+@media screen and (max-width: 782px) {
+	.logged-in .site-header{
+		top: 46px !important;
+	}
+}
+
 .site-header {
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 24px;
@@ -1043,13 +1058,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 	z-index: 2;	 
 }
 
+
+
 .site-header .text-logo {
 	float: left;
 	text-align: left;
 }
 
 .site-header .text-logo, .site-header .text-logo img{
-	height: 80px;
+	/*height: 80px;*/
+	height: 50px;
+	width: auto;
 }
 
 .site-header .header-t {
@@ -1063,7 +1082,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 	}
 
 	.header-sec .main-navigation {
-		margin-top: 20px;
+		margin-top: 8px;
 	}
 
 	.header-sec .main-navigation ul li {
